@@ -19,7 +19,9 @@ async function caller() {
         rootValue: resolver,
         graphiql: true
     }))
-
+    app.get('/',(req,res) => {
+        return res.send('Hello Main Page')  
+    })
     app.listen(5000, () => console.log("Server started on port 5000"))
 }
 caller()
