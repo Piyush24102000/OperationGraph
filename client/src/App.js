@@ -6,7 +6,7 @@ import NotFound from "./pages/NotFound";
 import Project from "./pages/Project";
 
 const client = new ApolloClient({
-  uri: 'http://localhost:5000/graphql',
+  uri: 'https://operation-graph.vercel.app/graphql',
   cache: new InMemoryCache()
 })
 function App() {
